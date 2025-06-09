@@ -33,5 +33,6 @@ A visually stunning calculator web app inspired by the clean and elegant design.
    cd Animated-glowing-bar-LED-
 
 2. **collaborated**
-   @ITVarsity
-   FNB App Academy 2025
+    ```bash
+    IT Varsity
+    cd FNB App Academy 2025

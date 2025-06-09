@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="inputBox" value="0"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="digiButton" onclick="digitBtnPressed('7')">7</td>
+            <td class="digiButton" onclick="digitBtnPressed('8')">8</td>
+            <td class="digiButton"onclick="digitBtnPressed('9')">9</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('x')">x</td>
+        </tr>
+        <tr>
+            <td class="digiButton"onclick="digitBtnPressed('4')">4</td>
+            <td class="digiButton"onclick="digitBtnPressed('5')">5</td>
+            <td class="digiButton"onclick="digitBtnPressed('6')">6</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('-')">-</td>
+        </tr>
+        <tr>
+            <td class="digiButton"onclick="digitBtnPressed('1')">1</td>
+            <td class="digiButton"onclick="digitBtnPressed('2')">2</td>
+            <td class="digiButton"onclick="digitBtnPressed('3')">3</td>
+            <td class="operatorButton"class="operatorButton" onclick="operatorBtnPressed('+')">+</td>
+        </tr>
+        <tr>
+            <td class="operatorButton"colspan="2" onclick="digitBtnPressed('0')">0</td>
+            <td class="operatorButton" onclick="btnACPressed()">AC</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('/')">/</td>
+        </tr>
+        <tr>
+            <td colspan="4" onclick="equalsBtnPressed()">=</td>
+        </tr>
+    </table>
+
+    <script>
+        let newLine = true;
+        let value = 0;
+        let currentOperator;
+
+        function digitBtnPressed(button) {
+            const inputBox = document.getElementById("inputBox");
+            if (newLine) {
+                inputBox.value = button;
+                newLine = false;
+            } else {
+                inputBox.value += button;
+            }
+        }
+
+        function btnACPressed() {
+            document.getElementById("inputBox").value = "0";
+            newLine = true;
+            value = 0;
+            currentOperator = null;
+        }
+
+        function operatorBtnPressed(operator) {
+            value = parseFloat(document.getElementById("inputBox").value);
+            currentOperator = operator;
+            newLine = true;
+        }
+
+        function equalsBtnPressed() {
+            const value2 = parseFloat(document.getElementById("inputBox").value);
+            let finalTotal = 0;
+
+            switch (currentOperator) {
+                case "+":
+                    finalTotal = value + value2;
+                    break;
+                case "-":
+                    finalTotal = value - value2;
+                    break;
+                case "x":
+                    finalTotal = value * value2;
+                    break;
+                case "/":
+                    finalTotal = value2 !== 0 ? value / value2 : "Error";
+                    break;
+            }
+
+            document.getElementById("inputBox").value = finalTotal;
+            newLine = true;
+            value = 0;
+        }
+    </script>
+</body>
+</html>

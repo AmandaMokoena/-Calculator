@@ -23,11 +23,11 @@ A visually stunning calculator web app inspired by the clean and elegant design 
 
 ## 📸 Preview
 
-![Calculator Screenshot](screenshot.png) <!-- Replace with your actual screenshot file -->
+![Calculator Screenshot](https://github.com/AmandaMokoena/Animated-glowing-bar-LED-/blob/main/Screenshot%202025-06-09%20231812.png) <!-- Replace with your actual screenshot file -->
 
 ## 🛠️ Setup Instructions
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/iphone-style-calculator.git
-   cd iphone-style-calculator
+   git clone https://github.com/AmandaMokoena/Animated-glowing-bar-LED-.git
+   cd Animated-glowing-bar-LED-

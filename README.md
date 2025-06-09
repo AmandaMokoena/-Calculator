@@ -35,4 +35,4 @@ A visually stunning calculator web app inspired by the clean and elegant design.
 2. **collaborated**
     ```bash
     IT Varsity
-    cd FNB App Academy 2025
+    FNB App Academy 2025

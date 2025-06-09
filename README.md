@@ -1,6 +1,6 @@
 # Animated glowing bar (LED) Calculator (HTML, CSS & JavaScript)
 
-A visually stunning calculator web app inspired by the clean and elegant design of iOS. Built using HTML, CSS, and JavaScript, it features:
+A visually stunning calculator web app inspired by the clean and elegant design. Built using HTML, CSS, and JavaScript, it features:
 - Light brown/nude color scheme
 - 3D animated buttons
 - LED-style glowing lines

@@ -31,3 +31,7 @@ A visually stunning calculator web app inspired by the clean and elegant design.
    ```bash
    git clone https://github.com/AmandaMokoena/Animated-glowing-bar-LED-.git
    cd Animated-glowing-bar-LED-
+
+2. **collaborated**
+   @ITVarsity
+   FNB App Academy 2025
